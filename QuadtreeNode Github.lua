@@ -9,7 +9,7 @@
 	Inserted objects must stay in the same position, as the Quadtree will not automatically update their positions on movement,
 	if you implement some heartbeat logic it would be possible, but for now it's only intended for stationary BaseParts.
 	
-	This version of the modulescript was modified to run standalone; the types and CreateBounds method were originally stored in a separate module.
+	This version of the modulescript was modified to run standalone; the types and CreateBounds method were originally stored in separate modules.
 
     Copyright 2025 FireExtravasate
 
@@ -291,5 +291,6 @@ function NodeClass.CreateBounds2D(pos:Vector2, size:Vector2): Bounds2D
 		size = size,
 	}
 end
+
 
 return NodeClass
