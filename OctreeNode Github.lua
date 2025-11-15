@@ -9,7 +9,7 @@
 	Inserted objects must stay in the same position, as the Octree will not automatically update their positions on movement,
 	if you implement some heartbeat logic it would be possible, but for now it's only intended for stationary BaseParts.
 	
-	This version of the modulescript was modified to run standalone; the types and CreateBounds method were originally stored in a separate module.
+	This version of the modulescript was modified to run standalone; the types and CreateBounds method were originally stored in separate modules.
 
     Copyright 2025 FireExtravasate
 
@@ -289,5 +289,6 @@ function NodeClass.CreateBounds(pos:Vector3, size:Vector3): Bounds
 		size = size,
 	}
 end
+
 
 return NodeClass
